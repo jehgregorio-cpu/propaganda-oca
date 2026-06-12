@@ -88,6 +88,7 @@ img { max-width: 100%; display: block; }
   content: '';
   position: absolute;
   inset: 0;
+  z-index: 0;
   background: linear-gradient(to bottom, rgba(10,10,10,.9) 0%, transparent 100%);
   pointer-events: none;
   transition: opacity .35s ease;
@@ -99,6 +100,7 @@ img { max-width: 100%; display: block; }
   content: '';
   position: absolute;
   inset: 0;
+  z-index: 0;
   background: rgba(10,10,10,.72);
   backdrop-filter: blur(14px) saturate(1.4);
   -webkit-backdrop-filter: blur(14px) saturate(1.4);
@@ -113,6 +115,7 @@ img { max-width: 100%; display: block; }
 
 .nav-logo {
   position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   line-height: 1;
@@ -133,6 +136,7 @@ img { max-width: 100%; display: block; }
 
 .nav-toggle {
   position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -204,6 +208,8 @@ img { max-width: 100%; display: block; }
 .nav-menu ul li a:hover { color: var(--branco); }
 
 .nav-cta {
+  position: relative;
+  z-index: 1;
   font-family: var(--mono);
   font-size: .85rem;
   letter-spacing: .1em;
