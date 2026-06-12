@@ -90,6 +90,25 @@ img { max-width: 100%; display: block; }
   inset: 0;
   background: linear-gradient(to bottom, rgba(10,10,10,.9) 0%, transparent 100%);
   pointer-events: none;
+  transition: opacity .35s ease;
+}
+.nav.scrolled::before {
+  opacity: 0;
+}
+.nav::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(10,10,10,.72);
+  backdrop-filter: blur(14px) saturate(1.4);
+  -webkit-backdrop-filter: blur(14px) saturate(1.4);
+  border-bottom: 1px solid rgba(255,222,33,.08);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+.nav.scrolled::after {
+  opacity: 1;
 }
 
 .nav-logo {
