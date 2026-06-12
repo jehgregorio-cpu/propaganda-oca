@@ -2,14 +2,6 @@
    PROPAGANDA OCA — DISRUPTIVE STYLESHEET
    ========================================== */
 
-@font-face {
-  font-family: 'Oferta do Dia';
-  src: url('OfertaDoDia-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 :root {
   --preto: #0A0A0A;
   --branco: #F2EFE8;
@@ -22,13 +14,12 @@
   --linha: rgba(242,239,232,.08);
   --mono: 'DM Mono', monospace;
   --sans: 'Space Grotesk', sans-serif;
-  --display: 'Bebas Neue', sans-serif;
-  --logo-propaganda: 'Cactus Classical Serif', serif;
-  --logo-oca: 'Oferta do Dia', sans-serif;
+  --display: 'Montserrat', sans-serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
+
 
 body {
   background: var(--preto);
@@ -121,17 +112,17 @@ img { max-width: 100%; display: block; }
   line-height: 1;
   letter-spacing: .02em;
 }
-.logo-p {
-  font-family: var(--logo-propaganda);
-  font-size: .85rem;
-  color: var(--cinza-light);
-  letter-spacing: .08em;
+.logo-img {
+  height: 48px;
+  width: auto;
+  display: block;
+  background: var(--fogo);
+  border-radius: 4px;
+  padding: 4px 8px;
 }
-.logo-o {
-  font-family: var(--logo-oca);
-  font-size: 1.65rem;
-  color: var(--branco);
-  letter-spacing: .01em;
+.footer-logo-img {
+  height: 80px;
+  padding: 6px 12px;
 }
 
 .nav-toggle {
@@ -189,7 +180,7 @@ img { max-width: 100%; display: block; }
   gap: 16px;
 }
 .nav-menu ul li a {
-  font-family: var(--display);
+  font-family: var(--display); font-weight: 900;
   font-size: clamp(3rem, 8vw, 6rem);
   color: var(--cinza-light);
   display: flex;
@@ -283,7 +274,7 @@ img { max-width: 100%; display: block; }
 }
 
 .big-word {
-  font-family: var(--display);
+  font-family: var(--display); font-weight: 900;
   font-size: clamp(5rem, 14vw, 14rem);
   line-height: .9;
   letter-spacing: -.02em;
@@ -385,7 +376,7 @@ img { max-width: 100%; display: block; }
   width: max-content;
 }
 .marquee-track span {
-  font-family: var(--display);
+  font-family: var(--display); font-weight: 900;
   font-size: 1.1rem;
   letter-spacing: .12em;
   color: var(--preto);
@@ -414,7 +405,7 @@ img { max-width: 100%; display: block; }
 .manifesto-label { align-self: start; padding-top: 8px; }
 
 blockquote p {
-  font-family: var(--display);
+  font-family: var(--display); font-weight: 900;
   font-size: clamp(1.8rem, 3.5vw, 3rem);
   line-height: 1.15;
   letter-spacing: .02em;
@@ -433,7 +424,7 @@ blockquote p strong { color: var(--fogo); }
 .mstat {}
 .mstat-num {
   display: block;
-  font-family: var(--display);
+  font-family: var(--display); font-weight: 900;
   font-size: 3rem;
   color: var(--fogo);
   letter-spacing: .05em;
@@ -467,7 +458,7 @@ blockquote p strong { color: var(--fogo); }
   padding-top: 6px;
 }
 .servicos-header h2 {
-  font-family: var(--display);
+  font-family: var(--display); font-weight: 900;
   font-size: clamp(3.5rem, 7vw, 7rem);
   line-height: .95;
   letter-spacing: .03em;
@@ -500,7 +491,7 @@ blockquote p strong { color: var(--fogo); }
 }
 .servico-num { opacity: .35; font-size: .7rem; }
 .servico-top h3 {
-  font-family: var(--display);
+  font-family: var(--display); font-weight: 900;
   font-size: clamp(1.8rem, 4vw, 3.5rem);
   letter-spacing: .04em;
   transition: color .2s;
@@ -581,7 +572,7 @@ blockquote p strong { color: var(--fogo); }
 }
 .sobre-left { position: sticky; top: 120px; }
 .sobre-left h2 {
-  font-family: var(--display);
+  font-family: var(--display); font-weight: 900;
   font-size: clamp(3rem, 6vw, 6.5rem);
   line-height: .95;
   letter-spacing: .03em;
@@ -658,7 +649,7 @@ blockquote p strong { color: var(--fogo); }
   margin: 0 auto 80px;
 }
 .processo-header h2 {
-  font-family: var(--display);
+  font-family: var(--display); font-weight: 900;
   font-size: clamp(3rem, 7vw, 7rem);
   line-height: .95;
   letter-spacing: .03em;
@@ -680,7 +671,7 @@ blockquote p strong { color: var(--fogo); }
   position: relative;
 }
 .proc-num {
-  font-family: var(--display);
+  font-family: var(--display); font-weight: 900;
   font-size: 5rem;
   color: rgba(10,10,10,.06);
   line-height: 1;
@@ -721,7 +712,7 @@ blockquote p strong { color: var(--fogo); }
   gap: 32px;
 }
 .resultados-header h2 {
-  font-family: var(--display);
+  font-family: var(--display); font-weight: 900;
   font-size: clamp(3.5rem, 7vw, 7rem);
   line-height: .95;
   letter-spacing: .03em;
@@ -800,7 +791,7 @@ blockquote p strong { color: var(--fogo); }
 }
 .cta-text .mono { color: rgba(10,10,10,.45); }
 .cta-text h2 {
-  font-family: var(--display);
+  font-family: var(--display); font-weight: 900;
   font-size: clamp(2.5rem, 5vw, 5rem);
   line-height: .95;
   letter-spacing: .03em;
@@ -849,7 +840,7 @@ blockquote p strong { color: var(--fogo); }
 }
 .contato-left {}
 .contato-left h2 {
-  font-family: var(--display);
+  font-family: var(--display); font-weight: 900;
   font-size: clamp(3rem, 6vw, 6.5rem);
   line-height: .95;
   letter-spacing: .03em;
@@ -941,18 +932,6 @@ blockquote p strong { color: var(--fogo); }
   display: flex;
   flex-direction: column;
   line-height: 1;
-}
-.footer-logo span:first-child {
-  font-family: var(--logo-propaganda);
-  font-size: 1.4rem;
-  letter-spacing: .1em;
-  color: var(--cinza-light);
-}
-.foot-oca {
-  font-family: var(--logo-oca);
-  font-size: 3.2rem;
-  color: var(--fogo);
-  letter-spacing: .01em;
 }
 .footer-top p {
   font-family: var(--mono);
