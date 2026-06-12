@@ -53,19 +53,36 @@ document.querySelectorAll(
 
 // Form submit
 const form = document.getElementById('form');
-form?.addEventListener('submit', e => {
+form?.addEventListener('submit', async e => {
   e.preventDefault();
   const btn = form.querySelector('.btn-submit');
   btn.textContent = 'Enviando...';
   btn.style.opacity = '.6';
   btn.disabled = true;
-  setTimeout(() => {
-    form.innerHTML = `
-      <div style="padding:60px 20px;text-align:center;">
-        <div style="font-size:2.5rem;margin-bottom:24px">✓</div>
-        <h3 style="font-family:'Bebas Neue',sans-serif;font-size:2.5rem;letter-spacing:.05em;margin-bottom:12px;color:#0A0A0A">MENSAGEM ENVIADA!</h3>
-        <p style="font-family:'DM Mono',monospace;font-size:.8rem;letter-spacing:.08em;color:#888">Um especialista entra em contato em até 24h.</p>
-      </div>
-    `;
-  }, 1200);
+  try {
+    const res = await fetch('https://formspree.io/f/mjgdeqnd', {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    });
+    if (res.ok) {
+      form.innerHTML = `
+        <div style="padding:60px 20px;text-align:center;">
+          <div style="font-size:2.5rem;margin-bottom:24px">✓</div>
+          <h3 style="font-family:'Bebas Neue',sans-serif;font-size:2.5rem;letter-spacing:.05em;margin-bottom:12px;color:#0A0A0A">MENSAGEM ENVIADA!</h3>
+          <p style="font-family:'DM Mono',monospace;font-size:.8rem;letter-spacing:.08em;color:#888">Um especialista entra em contato em até 24h.</p>
+        </div>
+      `;
+    } else {
+      btn.textContent = 'Enviar e receber diagnóstico gratuito →';
+      btn.style.opacity = '1';
+      btn.disabled = false;
+      alert('Erro ao enviar. Tente novamente ou entre em contato pelo WhatsApp.');
+    }
+  } catch {
+    btn.textContent = 'Enviar e receber diagnóstico gratuito →';
+    btn.style.opacity = '1';
+    btn.disabled = false;
+    alert('Erro ao enviar. Verifique sua conexão e tente novamente.');
+  }
 });

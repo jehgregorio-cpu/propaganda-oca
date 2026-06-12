@@ -1,0 +1,16 @@
+# Interior Urgency
+### A Design Philosophy
+
+---
+
+**Interior Urgency** is a visual movement born from the productive tension between smallness and ambition. It lives in the gap between the vernacular and the precise — where hand-painted storefront lettering meets the discipline of Swiss grid systems. It does not romanticize the provincial. It insists on it. The interior is not a limitation; it is the point. Every mark made under this philosophy carries the weight of a specific place, a specific street, a specific kind of light.
+
+The formal language is governed by **compression and contrast**. Large geometric masses — blocks of pure chromatic force — are interrupted by the exact, the tiny, the almost-clinical. A field of absolute black holds a single yellow word as if it were a signal flare. Space is not empty; it is charged. Negative space is where meaning accumulates silently, waiting for the eye to arrive. The craft is in knowing what to leave out. Every decision to remove is as labored, as painstaking, as any addition — the result of someone who has spent years learning what is excessive.
+
+Color is treated as **material, not decoration**. Yellow is not optimism — it is visibility, the industrial caution-stripe, the sun above a particular latitude. Black is not absence — it is permanence, the weight of something that will not move. Off-white is the paper before the press, the wall before the sign. These three tones create a complete chromatic world with the internal logic of a system, not the accident of taste. Their relationships are calibrated with the precision of a master craftsman who has mixed the same pigments for decades.
+
+**Type is architecture.** Letters are not vessels for words — they are structural members, load-bearing elements that define spatial relationships. Headlines function as walls. Small monospaced text functions as datum lines — the kind of notation found in technical drawings, cartographic legends, anatomical plates. The contrast between colossal and minute is not for drama; it is for honesty about what matters most and what serves. Every typographic decision is the result of countless refinements, tested against the space until the relationship between letterform and void reaches equilibrium.
+
+The composition seeks **diagonal tension within orthogonal discipline**. The grid is absolute. What moves within it is the eye — pulled by asymmetric placement, by a lone element at the extreme edge, by a rule that almost but does not quite touch. Rhythm emerges from the repetition of a single element at varied intervals, the way a jazz phrase returns in a different key. The work should feel inevitable in retrospect and surprising in the instant. This is the product of deep expertise: the ability to make the labored appear effortless, the calculated appear instinctive.
+
+**The mark of Interior Urgency is that it looks like it cost something.** Not money — time. Attention. The kind of care that only comes from genuine investment in a place and its people. The final work must read as the artifact of someone who spent weeks on a single proportional relationship, who redrew the same letter twenty times to find the weight that matched the idea. Museum-quality execution is not optional; it is the ethical obligation of work made in service of those who deserve more than the generic.

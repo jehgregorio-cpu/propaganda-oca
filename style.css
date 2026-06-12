@@ -2,6 +2,14 @@
    PROPAGANDA OCA — DISRUPTIVE STYLESHEET
    ========================================== */
 
+@font-face {
+  font-family: 'Oferta do Dia';
+  src: url('OfertaDoDia-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --preto: #0A0A0A;
   --branco: #F2EFE8;
@@ -15,6 +23,8 @@
   --mono: 'DM Mono', monospace;
   --sans: 'Space Grotesk', sans-serif;
   --display: 'Bebas Neue', sans-serif;
+  --logo-propaganda: 'Cactus Classical Serif', serif;
+  --logo-oca: 'Oferta do Dia', sans-serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -87,11 +97,20 @@ img { max-width: 100%; display: block; }
   display: flex;
   flex-direction: column;
   line-height: 1;
-  font-family: var(--display);
-  letter-spacing: .05em;
+  letter-spacing: .02em;
 }
-.logo-p { font-size: .9rem; color: var(--cinza-light); }
-.logo-o { font-size: 1.6rem; color: var(--branco); }
+.logo-p {
+  font-family: var(--logo-propaganda);
+  font-size: .85rem;
+  color: var(--cinza-light);
+  letter-spacing: .08em;
+}
+.logo-o {
+  font-family: var(--logo-oca);
+  font-size: 1.65rem;
+  color: var(--branco);
+  letter-spacing: .01em;
+}
 
 .nav-toggle {
   position: relative;
@@ -896,12 +915,20 @@ blockquote p strong { color: var(--fogo); }
 .footer-logo {
   display: flex;
   flex-direction: column;
-  font-family: var(--display);
   line-height: 1;
-  letter-spacing: .05em;
-  font-size: 2.5rem;
 }
-.foot-oca { color: var(--fogo); }
+.footer-logo span:first-child {
+  font-family: var(--logo-propaganda);
+  font-size: 1.4rem;
+  letter-spacing: .1em;
+  color: var(--cinza-light);
+}
+.foot-oca {
+  font-family: var(--logo-oca);
+  font-size: 3.2rem;
+  color: var(--fogo);
+  letter-spacing: .01em;
+}
 .footer-top p {
   font-family: var(--mono);
   font-size: .75rem;
