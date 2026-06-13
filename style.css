@@ -222,10 +222,6 @@ img { max-width: 100%; display: block; }
   padding: 140px 48px 0;
   position: relative;
   overflow: hidden;
-  background-color: var(--preto);
-  background-image: url('textures/pixel-dark.svg');
-  background-size: 80px 80px;
-  background-repeat: repeat;
 }
 
 .hero::before {
@@ -393,10 +389,6 @@ img { max-width: 100%; display: block; }
 .manifesto {
   padding: 120px 48px;
   border-bottom: 1px solid var(--linha);
-  background-color: var(--preto);
-  background-image: url('textures/pixel-dark.svg');
-  background-size: 80px 80px;
-  background-repeat: repeat;
 }
 .manifesto-inner {
   max-width: 1160px;
