@@ -621,7 +621,7 @@ blockquote p strong { color: var(--fogo); }
   transform: translateY(-4px);
   box-shadow: 0 12px 32px rgba(10,10,10,.08);
 }
-.card-icon { font-size: 1.5rem; margin-bottom: 12px; display: block; }
+.card-icon { display: block; margin-bottom: 16px; line-height: 0; }
 .sobre-card h4 {
   font-family: var(--sans);
   font-size: .95rem;
