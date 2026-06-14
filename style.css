@@ -550,6 +550,28 @@ blockquote p strong { color: var(--fogo); }
 }
 .servico-cta:hover { gap: 16px; }
 
+.servico-intro {
+  padding: 28px 0 36px;
+  max-width: 720px;
+  border-bottom: 1px solid var(--linha);
+}
+.servico-intro p {
+  color: var(--cinza-mid);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.servico-destaque {
+  grid-column: 1 / -1;
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: .95rem;
+  color: var(--preto);
+  margin-top: 8px;
+  padding-top: 16px;
+  border-top: 1px solid var(--linha);
+}
+
 /* ==========================================
    SOBRE
    ========================================== */
