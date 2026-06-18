@@ -792,6 +792,52 @@ blockquote p strong { color: var(--fogo); }
 /* ==========================================
    CTA SECTION
    ========================================== */
+/* ==========================================
+   MATERIAL RICO
+   ========================================== */
+.material-rico {
+  padding: 0 48px 80px;
+}
+.material-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  background: var(--cinza);
+  border: 1px solid rgba(255,222,33,.12);
+  border-left: 6px solid var(--fogo);
+  padding: 64px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+.material-text .mono { color: rgba(242,239,232,.35); }
+.material-text h2 {
+  font-family: var(--display); font-weight: 900;
+  font-size: clamp(2rem, 4vw, 3.8rem);
+  line-height: .95;
+  letter-spacing: .03em;
+  color: var(--branco);
+  margin: 12px 0 20px;
+}
+.material-text h2 em { font-style: normal; color: var(--fogo); }
+.material-text p { color: rgba(242,239,232,.55); font-size: 1rem; max-width: 400px; }
+.material-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--fogo);
+  color: var(--preto);
+  font-family: var(--mono);
+  font-size: .8rem;
+  letter-spacing: .1em;
+  padding: 20px 36px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: background .2s, color .2s;
+}
+.material-btn:hover { background: var(--branco); }
+
 .cta-section {
   padding: 0 48px 120px;
 }
