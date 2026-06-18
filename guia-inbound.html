@@ -261,8 +261,7 @@ form { display: flex; flex-direction: column; gap: 16px; }
       <p>Prometemos não enviar spam. Só conteúdo útil sobre marketing para empresas do interior de SP.</p>
     </div>
 
-    <form action="https://formspree.io/f/mjgdeqnd" method="POST">
-      <input type="hidden" name="_next" value="https://propagandaoca.com.br/inbound-marketing.html" />
+    <form id="lead-form">
       <input type="hidden" name="_subject" value="[Lead] Guia Inbound Marketing" />
       <input type="hidden" name="origem" value="Guia Inbound Marketing" />
 
@@ -287,14 +286,41 @@ form { display: flex; flex-direction: column; gap: 16px; }
         <input type="tel" id="whatsapp" name="whatsapp" placeholder="(11) 9 0000-0000" required />
       </div>
 
-      <button type="submit" class="btn-submit">
+      <button type="submit" class="btn-submit" id="btn-submit">
         Quero acessar o guia →
       </button>
-      <p class="disclaimer">Sem spam. Seus dados são usados apenas para contato.</p>
+      <p class="disclaimer" id="form-msg">Sem spam. Seus dados são usados apenas para contato.</p>
     </form>
   </div>
 
 </div>
+
+<script>
+document.getElementById('lead-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const btn = document.getElementById('btn-submit');
+  const msg = document.getElementById('form-msg');
+  btn.textContent = 'Enviando...';
+  btn.disabled = true;
+  try {
+    const res = await fetch('https://formspree.io/f/mjgdeqnd', {
+      method: 'POST',
+      body: new FormData(this),
+      headers: { 'Accept': 'application/json' }
+    });
+    if (res.ok) {
+      window.location.href = 'https://propagandaoca.com.br/inbound-marketing.html';
+    } else {
+      throw new Error();
+    }
+  } catch {
+    btn.textContent = 'Quero acessar o guia →';
+    btn.disabled = false;
+    msg.textContent = 'Erro ao enviar. Tente novamente.';
+    msg.style.color = '#c00';
+  }
+});
+</script>
 
 </body>
 </html>
