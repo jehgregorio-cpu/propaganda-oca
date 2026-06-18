@@ -162,7 +162,7 @@ img { max-width: 100%; display: block; }
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 48px;
+  gap: 32px;
   opacity: 0;
   pointer-events: none;
   transition: opacity .4s ease;
@@ -173,15 +173,15 @@ img { max-width: 100%; display: block; }
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 8px;
 }
 .nav-menu ul li a {
   font-family: var(--display); font-weight: 900;
-  font-size: clamp(3rem, 8vw, 6rem);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
   color: var(--cinza-light);
   display: flex;
   align-items: baseline;
-  gap: 16px;
+  gap: 12px;
   transition: color .2s;
   letter-spacing: .05em;
 }
