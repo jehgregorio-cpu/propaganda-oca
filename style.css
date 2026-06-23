@@ -778,6 +778,172 @@ blockquote p strong { color: var(--fogo); }
   font-size: .9rem;
   line-height: 1.65;
 }
+.areas-seo-grid a {
+  display: inline-flex;
+  margin-top: 18px;
+  font-family: var(--mono);
+  font-size: .72rem;
+  letter-spacing: .1em;
+  color: var(--preto);
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--fogo);
+}
+
+/* ==========================================
+   LOCAL PAGES
+   ========================================== */
+.local-page {
+  background: var(--preto);
+  color: var(--branco);
+}
+.local-hero {
+  min-height: 76vh;
+  padding: 140px 48px 88px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  overflow: hidden;
+}
+.local-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(10,10,10,.96) 0%, rgba(10,10,10,.74) 52%, rgba(10,10,10,.5) 100%),
+    radial-gradient(circle at 78% 22%, rgba(255,222,33,.18), transparent 34%);
+  pointer-events: none;
+}
+.local-hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1040px;
+}
+.local-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--mono);
+  font-size: .75rem;
+  letter-spacing: .1em;
+  color: var(--fogo);
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.local-hero h1 {
+  font-family: var(--display);
+  font-weight: 900;
+  font-size: clamp(3rem, 8vw, 8.5rem);
+  line-height: .92;
+  letter-spacing: .02em;
+  max-width: 980px;
+}
+.local-hero p {
+  max-width: 680px;
+  color: var(--cinza-light);
+  font-size: 1.12rem;
+  line-height: 1.7;
+  margin: 28px 0 34px;
+}
+.local-content {
+  background: var(--branco);
+  color: var(--preto);
+}
+.local-section {
+  padding: 96px 48px;
+}
+.local-section-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.local-section h2 {
+  font-family: var(--display);
+  font-weight: 900;
+  font-size: clamp(2.3rem, 5vw, 5.6rem);
+  line-height: .98;
+  letter-spacing: .03em;
+  margin: 14px 0 28px;
+}
+.local-copy {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap: 64px;
+  align-items: start;
+}
+.local-copy p {
+  color: #444;
+  font-size: 1.04rem;
+  line-height: 1.78;
+  margin-bottom: 20px;
+}
+.local-list {
+  display: grid;
+  gap: 14px;
+  border-top: 3px solid var(--fogo);
+  padding-top: 22px;
+}
+.local-list li {
+  color: #333;
+  line-height: 1.62;
+  border-bottom: 1px solid rgba(10,10,10,.08);
+  padding-bottom: 14px;
+}
+.local-band {
+  background: var(--preto);
+  color: var(--branco);
+}
+.local-band .local-copy p,
+.local-band .local-list li {
+  color: var(--cinza-light);
+}
+.local-band .local-list li {
+  border-bottom-color: var(--linha);
+}
+.local-faq {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  margin-top: 42px;
+}
+.local-faq article {
+  background: #F7F3EB;
+  border: 1px solid rgba(10,10,10,.08);
+  padding: 26px;
+}
+.local-faq h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.local-faq p {
+  color: #666;
+  line-height: 1.65;
+}
+.local-final-cta {
+  padding: 96px 48px;
+  background: var(--fogo);
+  color: var(--preto);
+}
+.local-final-cta .local-section-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+.local-final-cta h2 {
+  max-width: 760px;
+  font-family: var(--display);
+  font-weight: 900;
+  font-size: clamp(2.6rem, 5vw, 5.5rem);
+  line-height: .95;
+}
+.local-final-cta a {
+  background: var(--preto);
+  color: var(--branco);
+  font-family: var(--mono);
+  font-size: .8rem;
+  letter-spacing: .1em;
+  padding: 20px 34px;
+}
 
 /* ==========================================
    PROCESSO
@@ -1210,6 +1376,11 @@ blockquote p strong { color: var(--fogo); }
   .sobre-left { position: static; }
   .areas-seo { padding: 80px 24px; }
   .areas-seo-grid { grid-template-columns: 1fr; }
+  .local-hero { padding: 120px 24px 72px; }
+  .local-section { padding: 80px 24px; }
+  .local-copy { grid-template-columns: 1fr; gap: 36px; }
+  .local-faq { grid-template-columns: 1fr; }
+  .local-final-cta { padding: 80px 24px; }
   .processo { padding: 80px 24px; }
   .processo-steps { grid-template-columns: 1fr 1fr; gap: 40px; }
   .proc-line { display: none; }
