@@ -15,7 +15,7 @@ if (cursor && window.matchMedia('(pointer: fine)').matches && !window.matchMedia
     cursor.style.left = e.clientX + 'px';
     cursor.style.top  = e.clientY + 'px';
   });
-  document.querySelectorAll('a, button, .servico-item').forEach(el => {
+  document.querySelectorAll('a, button, .servico-card').forEach(el => {
     el.addEventListener('mouseenter', () => cursor.classList.add('expanded'));
     el.addEventListener('mouseleave', () => cursor.classList.remove('expanded'));
   });
@@ -92,7 +92,7 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.1 });
 
 document.querySelectorAll(
-  '.mstat, .servico-item, .depo, .sobre-card, .proc-step'
+  '.mstat, .servico-card, .depo, .sobre-card, .proc-step'
 ).forEach((el, i) => {
   el.classList.add('reveal');
   el.style.transitionDelay = `${(i % 4) * 80}ms`;
