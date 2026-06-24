@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    if (location.protocol === "http:" && location.hostname !== "localhost" && location.hostname !== "127.0.0.1") {
+      location.replace("https://" + location.host + location.pathname + location.search + location.hash);
+    }
+  </script>
   <title>Agência de Marketing em Bom Jesus, Atibaia e Bragança | Propaganda Oca</title>
   <meta name="description" content="Agência de marketing para empresas de Bom Jesus dos Perdões, Atibaia e Bragança Paulista que querem ser encontradas, escolhidas e lembradas." />
   <meta name="robots" content="index, follow, max-image-preview:large" />

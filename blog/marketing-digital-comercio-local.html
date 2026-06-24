@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    if (location.protocol === "http:" && location.hostname !== "localhost" && location.hostname !== "127.0.0.1") {
+      location.replace("https://" + location.host + location.pathname + location.search + location.hash);
+    }
+  </script>
   <title>Marketing digital para comércio local: por onde começar? | Propaganda Oca</title>
   <meta name="description" content="Guia prático de marketing digital para comércio local: presença no Google, conteúdo, WhatsApp, ofertas e rotina de relacionamento." />
   <meta name="robots" content="index, follow, max-image-preview:large" />

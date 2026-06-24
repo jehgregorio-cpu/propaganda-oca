@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    if (location.protocol === "http:" && location.hostname !== "localhost" && location.hostname !== "127.0.0.1") {
+      location.replace("https://" + location.host + location.pathname + location.search + location.hash);
+    }
+  </script>
   <title>6 Perguntas antes de contratar uma agência de marketing | Propaganda Oca</title>
   <meta name="description" content="73% dos clientes que trocam de agência citam falta de comunicação. Veja as 6 perguntas que separam uma boa parceria de um contrato que vai te frustrar." />
   <meta name="robots" content="index, follow, max-image-preview:large" />

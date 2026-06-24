@@ -3,6 +3,11 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    if (location.protocol === "http:" && location.hostname !== "localhost" && location.hostname !== "127.0.0.1") {
+      location.replace("https://" + location.host + location.pathname + location.search + location.hash);
+    }
+  </script>
 <title>Inbound Marketing: O Guia Visual para Iniciantes — Propaganda Oca</title>
 <meta name="description" content="Baixe gratuitamente o guia visual de Inbound Marketing da Propaganda Oca. 19 slides que explicam do zero como funciona o marketing de atração." />
 <meta name="robots" content="index, follow, max-image-preview:large" />
